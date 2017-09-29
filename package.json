@@ -1,0 +1,22 @@
+{
+  "name": "imagenation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "imagenation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haytherecharlie/Imagenation.git"
+  },
+  "author": "Charlie Hay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haytherecharlie/Imagenation/issues"
+  },
+  "homepage": "https://github.com/haytherecharlie/Imagenation#readme",
+  "dependencies": {
+    "react": "^16.0.0"
+  }
+}
