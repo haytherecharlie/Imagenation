@@ -1,6 +1,7 @@
 import React from 'react';
 import {scaleSize} from './constants';
 import uploadHolder from '../../images/image-upload.png';
+import './style.css';
 
 export default class Imageination extends React.Component {
 
@@ -240,7 +241,7 @@ export default class Imageination extends React.Component {
 	}
 
 	showImage(image) {
-		console.log(image);
+		this.imageHolder.src = image;
 	}
 
 	handleUpload = () => {
@@ -253,18 +254,18 @@ export default class Imageination extends React.Component {
 
 	render() {
 		return(
-			<form onSubmit={(e) => {e.preventDefault()}}>
-				<input
-					onChange={this.handleUpload}
-					ref={(input) => { this.fileInput = input; }}
-					alt="image upload" type="file" accept="image/*" />
-
-				<img
-					ref={(img) => {this.imageHolder = img}}
-					src={uploadHolder} alt="upload"
-					onClick={this.uploadImage} />
-				<button type="submit">Upload</button>
-			</form>
+			<div className="Imagenation">
+				<form onSubmit={(e) => {e.preventDefault()}}>
+					<input
+						onChange={this.handleUpload}
+						ref={(input) => { this.fileInput = input; }}
+						alt="image upload" type="file" accept="image/*" />
+					<img
+						ref={(img) => {this.imageHolder = img}}
+						src={uploadHolder} alt="upload"
+						onClick={this.uploadImage} />
+				</form>
+			</div>
 		)
 	}
 
