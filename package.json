@@ -1,16 +1,16 @@
 {
   "name": "imagenation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component to resize and correct image orientation automatically in the frontend.",
-	"homepage": "https://github.com/haytherecharlie/Imagenation#readme",
+  "homepage": "https://github.com/haytherecharlie/Imagenation#readme",
   "main": "Imagenation.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/haytherecharlie/Imagenation.git"
   },
-	"dependencies": {
+  "dependencies": {
     "exif-js": "^2.3.0"
-	},
+  },
   "keywords": [
     "React",
     "Image",
