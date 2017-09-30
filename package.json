@@ -9,7 +9,7 @@
     "url": "git+https://github.com/haytherecharlie/Imagenation.git"
   },
 	"dependencies": {
-    "exif-js": "^2.3.0",
+    "exif-js": "^2.3.0"
 	},
   "keywords": [
     "React",
