@@ -1,14 +1,14 @@
-# Imagenation
-**Imagenation is a React Component that allows you to resize and auto-orient images in the frontend.**
+# imagenation
+**imagenation is a React Component that allows you to resize and auto-orient images in the frontend.**
 
 *HOW TO INSTALL*
   
-    npm install --save Imagenation
+    npm install --save imagenation
   
 **HOW TO USE**
 
     import React from 'react';
-    import Imagenation from 'Imagenation';
+    import Imagenation from 'imagenation';
 
     export default class <your-class> extends React.Component {
       render() {
