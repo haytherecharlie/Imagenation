@@ -185,7 +185,7 @@ export default class Imageination extends React.Component {
 
 	render() {
 		return(
-			<div className="Imagenation">
+			<div className="imagenation">
 				<input
 				onChange={this.handleUpload}
 				ref={(input) => {this.fileInput = input}}
