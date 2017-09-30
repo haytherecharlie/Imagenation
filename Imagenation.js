@@ -172,14 +172,14 @@ export default class Imageination extends React.Component {
 	/**
 	*	Handle Upload of Image.
 	*/
-	handleUpload = () => {
+	handleUpload() {
 		this.imageToBase64(this.fileInput.files[0]);
 	}
 
 	/**
 	* Trigger click on fileInput.
 	*/
-	triggerFileInput = () => {
+	triggerFileInput() {
 		this.fileInput.click();
 	}
 
