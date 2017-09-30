@@ -8,7 +8,7 @@
 **HOW TO USE**
 
     import React from 'react';
-    import Imagination from 'Imagination';
+    import Imagenation from 'Imagenation';
 
     export default class <your-class> extends React.Component {
       render() {
