@@ -1,22 +1,31 @@
 {
   "name": "imagenation",
   "version": "1.0.0",
-  "description": "",
-  "main": "imagenation.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "React component to resize and correct image orientation automatically in the frontend.",
+	"homepage": "https://github.com/haytherecharlie/Imagenation#readme",
+  "main": "Imagenation.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/haytherecharlie/Imagenation.git"
   },
+	"dependencies": {
+    "exif-js": "^2.3.0",
+	},
+  "keywords": [
+    "React",
+    "Image",
+    "Resize",
+    "Orientation",
+    "EXIF",
+    "Frontend",
+    "Base64",
+    "Upload",
+    "Automatic",
+    "Imagenation"
+  ],
   "author": "Charlie Hay",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/haytherecharlie/Imagenation/issues"
-  },
-  "homepage": "https://github.com/haytherecharlie/Imagenation#readme",
-  "dependencies": {
-    "react": "^16.0.0"
   }
 }
