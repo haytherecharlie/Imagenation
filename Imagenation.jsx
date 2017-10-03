@@ -20,7 +20,7 @@ export default class Imageination extends React.Component {
 	/**
 	* Convert the target image to Base64.
 	*/
-	imageToBase64(target) {
+	imageToBase64 = (target) => {
 
 		// Create a new FileReader.
 		const reader = new FileReader();
@@ -37,7 +37,7 @@ export default class Imageination extends React.Component {
 	/**
 	*	Get orientation data from EXIF.
 	*/
-	getArrayBufferOrientation(arrayBuffer, target) {
+	getArrayBufferOrientation (arrayBuffer, target) => {
 
 		// Read EXIF Orientation data.
 		const arrayBufferExif = EXIF.readFromBinaryFile(arrayBuffer);
@@ -52,7 +52,7 @@ export default class Imageination extends React.Component {
 	/**
 	* Orient the image based on EXIF data.
 	*/
-	orientImage(image, orientation, target) {
+	orientImage = (image, orientation, target) => {
 
 		// Create a new Image called thisImage.
 		const thisImage = new Image();
@@ -142,7 +142,7 @@ export default class Imageination extends React.Component {
 	/**
 	* Draw the image to Canvas.
 	*/
-	imageToCanvas(canVals, thisImage) {
+	imageToCanvas = (canVals, thisImage) => {
 
 		// Create new Canvas.
 		const can = document.createElement("canvas");
@@ -165,21 +165,21 @@ export default class Imageination extends React.Component {
 	/**
 	* Set the resized image to src.
 	*/
-	showImage(image) {
+	showImage = (image) => {
 		this.imageHolder.src = image;
 	}
 
 	/**
 	*	Handle Upload of Image.
 	*/
-	handleUpload() {
+	handleUpload = () => {
 		this.imageToBase64(this.fileInput.files[0]);
 	}
 
 	/**
 	* Trigger click on fileInput.
 	*/
-	triggerFileInput() {
+	triggerFileInput = () => {
 		this.fileInput.click();
 	}
 
