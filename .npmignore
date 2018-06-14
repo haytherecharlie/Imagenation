@@ -1,2 +1,2 @@
-*.jsx
-
+/src
+/npm-debug.log

@@ -22,7 +22,7 @@ var _exifJs = require('exif-js');
 
 var _exifJs2 = _interopRequireDefault(_exifJs);
 
-var _placeholder = require('./assets/placeholder.jpg');
+var _placeholder = require('./placeholder.jpg');
 
 var _placeholder2 = _interopRequireDefault(_placeholder);
 

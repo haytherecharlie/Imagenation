@@ -17,7 +17,7 @@ import EXIF from 'exif-js';
 /**********************************
 * LOCAL FILES
 **********************************/
-import placeholder from './assets/placeholder.jpg';
+import placeholder from './placeholder.jpg';
 
 const Wrapper = styled.div`
 	height: ${props => props.scaleSize}px;
