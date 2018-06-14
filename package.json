@@ -1,39 +1,44 @@
 {
-  "name": "imagenation",
-  "version": "2.0.0",
-  "description": "React component to resize and correct image orientation automatically in the frontend.",
-  "homepage": "https://github.com/haytherecharlie/Imagenation#readme",
-  "main": "Imagenation.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/haytherecharlie/Imagenation.git"
-  },
-  "dependencies": {
-    "exif-js": "^2.3.0"
-  },
-  "scripts": {
-    "build": "jsx main.jsx > main.js",
-    "prepublish": "npm run build"
-  },
-  "keywords": [
-    "React",
-    "Image",
-    "Resize",
-    "Orientation",
-    "EXIF",
-    "Frontend",
-    "Base64",
-    "Upload",
-    "Automatic",
-    "Imagenation"
-  ],
-  "author": "Charlie Hay",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/haytherecharlie/Imagenation/issues"
-  },
-  "devDependencies": {
-    "babel-preset-react": "^6.24.1",
-    "react-tools": "^0.13.3"
-  }
+	"name": "imagenation",
+	"version": "2.0.0",
+	"description": "React component to resize and correct image orientation automatically in the frontend.",
+	"author": "Charlie Hay",
+	"license": "ISC",
+	"homepage": "https://github.com/haytherecharlie/Imagenation#readme",
+	"main": "build/index.js",
+	"bugs": {
+		"url": "https://github.com/haytherecharlie/Imagenation/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/haytherecharlie/Imagenation.git"
+	},
+	"dependencies": {
+		"exif-js": "^2.3.0",
+		"react": "^16.4.1"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"react-tools": "^0.13.3",
+		"styled-components": "^3.3.2"
+	},
+	"scripts": {
+		"build": "babel -d ./build ./src -s",
+		"prepublish": "npm run build"
+	},
+	"keywords": [
+		"React",
+		"Image",
+		"Resize",
+		"Orientation",
+		"EXIF",
+		"Frontend",
+		"Base64",
+		"Upload",
+		"Automatic",
+		"Imagenation"
+	]
 }
