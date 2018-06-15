@@ -197,7 +197,7 @@ export default class Imageination extends React.Component {
 	}
 
 	sendImageToParent() {
-		this.props.onImage(this.state.image);
+		this.props.onImage(() => this.state.image);
 	}
 
 	/**
