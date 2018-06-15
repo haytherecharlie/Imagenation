@@ -192,12 +192,12 @@ export default class Imageination extends React.Component {
 		ctx.restore();
 
 		// Send the canvas data Url to showImage.
-		this.setState({image: can.toDataURL()}, this.sendImageToParent());
+		this.setState({image: can.toDataURL()}, this.sendImageToParent);
 
 	}
 
 	sendImageToParent() {
-		this.props.onImage(() => this.state.image);
+		this.props.onImage(this.state.image);
 	}
 
 	/**

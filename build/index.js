@@ -214,7 +214,7 @@ var Imageination = function (_React$Component) {
 			ctx.restore();
 
 			// Send the canvas data Url to showImage.
-			_this.setState({ image: can.toDataURL() }, _this.sendImageToParent());
+			_this.setState({ image: can.toDataURL() }, _this.sendImageToParent);
 		}, _this.handleUpload = function () {
 			_this.imageToBase64(_this.state.fileInput.current.files[0]);
 		}, _this.triggerFileInput = function () {
