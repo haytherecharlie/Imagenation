@@ -194,19 +194,22 @@ export default class Imageination extends React.Component {
 
 	}
 
+	/**
+	*	Return Image URI To Parent
+	*/
 	sendImageToParent = () => {
 		this.props.onImage(this.state.image);
 	}
 
 	/**
-	*	Handle Upload of Image.
+	*	Handle Upload Of Image.
 	*/
 	handleUpload = () => {
 		this.imageToBase64(this.state.fileInput.current.files[0]);
 	}
 
 	/**
-	* Trigger click on fileInput.
+	* Trigger Click On FileInput.
 	*/
 	triggerFileInput = () => {
 		this.state.fileInput.current.click();
