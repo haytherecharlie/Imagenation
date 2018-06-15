@@ -20,8 +20,8 @@ import EXIF from 'exif-js';
 import placeholder from './placeholder.jpg';
 
 const Wrapper = styled.div`
-	height: ${props => props.scaleSize}px;
-	width: ${props => props.scaleSize}px;
+	height: ${props => props.scaleSize || 200}px;
+	width: ${props => props.scaleSize || 200}px;
 `;
 
 const HiddenInput = styled.input`
@@ -94,7 +94,7 @@ export default class Imageination extends React.Component {
 			// Create a consitient ratio to original image.
 			const ratio = thisImage.width / thisImage.height;
 
-			const scaleSize = this.props.scaleSize;
+			const scaleSize = this.props.scaleSize || 200;
 
 			// Switch statement based on orientation value.
 			switch (orientation) {
@@ -190,7 +190,7 @@ export default class Imageination extends React.Component {
 		ctx.restore();
 
 		// Send the canvas data Url to showImage.
-		this.setState({image: can.toDataURL()}, this.sendImageToParent);
+		this.setState({ image: can.toDataURL() }, this.sendImageToParent);
 
 	}
 
@@ -198,7 +198,8 @@ export default class Imageination extends React.Component {
 	*	Return Image URI To Parent
 	*/
 	sendImageToParent = () => {
-		this.props.onImage(this.state.image);
+		if (this.props.onImage)
+			this.props.onImage(this.state.image);
 	}
 
 	/**

@@ -15,15 +15,15 @@
 	},
 	"dependencies": {
 		"exif-js": "^2.3.0",
-		"react": "^16.4.1"
+		"react": "^16.4.1",
+		"styled-components": "^3.3.2"
 	},
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
 		"babel-preset-env": "^1.7.0",
 		"babel-preset-react": "^6.24.1",
 		"babel-preset-stage-0": "^6.24.1",
-		"react-tools": "^0.13.3",
-		"styled-components": "^3.3.2"
+		"react-tools": "^0.13.3"
 	},
 	"scripts": {
 		"prebuild": "rm -rf ./build && mkdir ./build",
