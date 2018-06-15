@@ -20,8 +20,8 @@ import EXIF from 'exif-js';
 import placeholder from './placeholder.jpg';
 
 const Wrapper = styled.div`
-	height: ${props => props.scaleSize}px;
-	width: ${props => props.scaleSize}px;
+	height: ${props => props.scaleSize};
+	width: ${props => props.scaleSize};
 `;
 
 const HiddenInput = styled.input`
