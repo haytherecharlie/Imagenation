@@ -59,9 +59,7 @@ export default class Imageination extends React.Component {
 		const reader = new FileReader();
 
 		// When read send result to base64toBlob.
-		reader.onload = (e) => {
-			this.getArrayBufferOrientation(e.target.result, target);
-		}
+		reader.onload = (e) => this.getArrayBufferOrientation(e.target.result, target);
 
 		// Read the target as DataURL.
 		reader.readAsArrayBuffer(target);
@@ -196,7 +194,7 @@ export default class Imageination extends React.Component {
 
 	}
 
-	sendImageToParent() {
+	sendImageToParent = () => {
 		this.props.onImage(this.state.image);
 	}
 
