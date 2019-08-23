@@ -26,6 +26,13 @@
 
     npm i --save imagenation
 
+#### 2. USING THE METHOD:
+  /**
+   * Argument 1 (REQUIRED): is the image file from the input (see below for example)
+   * Argument 2 (OPTIONAL): is the pixel count (height) of the output image (default 200px) 
+   */
+  await imagenation(<IMAGE_FILE>, <RESIZE_INTEGER>)
+
 <br><a name="Topic03"></a>
 
 ## Code Example:
