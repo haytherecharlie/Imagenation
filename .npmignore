@@ -1,2 +1,8 @@
 /src
+/scripts
 /npm-debug.log
+/node_modules
+.babelrc
+.eslintrc
+.gitignore
+.prettierrc

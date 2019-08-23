@@ -1,45 +1,42 @@
 {
-	"name": "imagenation",
-	"version": "2.2.1",
-	"description": "React component to resize and correct image orientation automatically in the frontend.",
-	"author": "Charlie Hay",
-	"license": "ISC",
-	"homepage": "https://github.com/haytherecharlie/Imagenation#readme",
-	"main": "build/index.js",
-	"bugs": {
-		"url": "https://github.com/haytherecharlie/Imagenation/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/haytherecharlie/Imagenation.git"
-	},
-	"dependencies": {
-		"exif-js": "^2.3.0",
-		"react": "^16.4.1",
-		"styled-components": "^3.3.2"
-	},
-	"devDependencies": {
-		"babel-cli": "^6.26.0",
-		"babel-preset-env": "^1.7.0",
-		"babel-preset-react": "^6.24.1",
-		"babel-preset-stage-0": "^6.24.1",
-		"react-tools": "^0.13.3"
-	},
-	"scripts": {
-		"prebuild": "rm -rf ./build && mkdir ./build",
-		"build": "cp src/placeholder.jpg build/ && babel -d ./build ./src -s",
-		"prepublish": "npm run build"
-	},
-	"keywords": [
-		"React",
-		"Image",
-		"Resize",
-		"Orientation",
-		"EXIF",
-		"Frontend",
-		"Base64",
-		"Upload",
-		"Automatic",
-		"Imagenation"
-	]
+  "name": "imagenation",
+  "version": "3.0.0",
+  "description": "React component to resize and correct image orientation automatically in the frontend.",
+  "author": "Charlie Hay",
+  "license": "ISC",
+  "homepage": "https://github.com/haytherecharlie/Imagenation#readme",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "sh ./scripts/build.sh",
+    "watch": "babel -d ./build ./src -s --watch"
+  },
+  "dependencies": {
+    "exif-js": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^6.2.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.18.2"
+  },
+  "bugs": {
+    "url": "https://github.com/haytherecharlie/Imagenation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haytherecharlie/Imagenation.git"
+  },
+  "keywords": [
+    "Image",
+    "Resize",
+    "Orientation",
+    "EXIF",
+    "Base64",
+    "Automatic",
+    "Imagenation"
+  ]
 }
