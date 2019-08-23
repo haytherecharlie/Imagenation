@@ -1,7 +1,5 @@
 ---
-
 # Imagenation | Frontend Image Scaling and Orientation Library
-
 ---
 
 ### TABLE OF CONTENTS
@@ -29,8 +27,12 @@
 #### 2. USING THE METHOD:
 
     // Argument 1 (REQUIRED): is the image file from the input (see below for example)
-    // Argument 2 (OPTIONAL): is the pixel count (height) of the output image (default 200px) 
+    // Argument 2 (OPTIONAL): is the pixel count (height) of the output image (default 200px)
     await imagenation(<IMAGE_FILE>, <RESIZE_INTEGER>)
+
+#### 3. DEMONSTRATION:
+
+![](https://github.com/haytherecharlie/Imagenation/blob/master/assets/imagenation.gif)
 
 <br><a name="Topic03"></a>
 
