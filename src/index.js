@@ -2,7 +2,7 @@ import exif from 'exif-js'
 
 class Imagenation {
   constructor() {
-    this.fileReader = window.FileReader()
+    this.fileReader = new window.FileReader()
   }
 
   imagenation = (imageFile, resize) => {
