@@ -1,8 +1,9 @@
 import exif from 'exif-js'
+import FileReader from 'filereader'
 
 class Imagenation {
   constructor() {
-    this.fileReader = new window.FileReader()
+    this.fileReader = new FileReader()
   }
 
   imagenation = (imageFile, resize) => {
