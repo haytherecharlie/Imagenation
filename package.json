@@ -11,8 +11,7 @@
     "watch": "babel -d ./build ./src -s --watch"
   },
   "dependencies": {
-    "exif-js": "^2.3.0",
-    "filereader": "^0.10.3"
+    "exif-js": "^2.3.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

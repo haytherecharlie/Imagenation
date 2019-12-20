@@ -1,5 +1,4 @@
 import exif from 'exif-js'
-import FileReader from 'filereader'
 
 class Imagenation {
   constructor() {
